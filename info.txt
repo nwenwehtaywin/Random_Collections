@@ -1,0 +1,13 @@
+1. QA_all_saving_methods
+     - saving and loading metods during HF arrow and pickle
+
+2. QA_deepestroberta_base_squad2
+      QA with squad 2 with model deepestroberta_base_squad2
+
+3. Same file (2 - QA_deepestroberta_base_squad2)
+   funnel-transformer/small-base
+
+4. same file of 2
+    twmkn9/albert-base-v2-squad2
+
+5. 

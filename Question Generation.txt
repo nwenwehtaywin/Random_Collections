@@ -1,0 +1,76 @@
+QGen.py
+it can be updated by writing some conditions for 
+alternating the Model
+
+Question Generation
+
+1.meta-llama/Llama-2-7b-chat-hf 
+
+Embedding Model	:	NO need
+Tokenizer Model	:	NousResearch/Llama-2-7b-chat-hf --> version of meta-llama/Llama-2-7b-chat-hf 
+Language Model	:	NousResearch/Llama-2-7b-chat-hf
+Library type	: 	Hugging Face
+File Name	: 	My Question Generation with LangChain.ipynb
+Location	: 	D:Ediscovery\LLM
+Summary		: 	use own dataset (json format) and use LLM and langchaing to generate the question
+
+
+2. HuggingFaceH4/zephyr-7b-beta
+
+Embedding Model	:	NO need
+Tokenizer Model	:	HuggingFaceH4/zephyr-7b-beta
+Language Model	:	HuggingFaceH4/zephyr-7b-beta
+Library type	: 	Hugging Face
+File Name	: 	My Question Generation with LangChain.ipynb
+Location	: 	D:Ediscovery\LLM
+Summary		: 	use own dataset (json format) and use LLM and langchaing to generate the question
+
+
+
+3. google/flan-t5-base
+Embedding Model	:	NO need
+Tokenizer Model	:	google/flan-t5-base
+Language Model	:	google/flan-t5-base
+Library type	: 	Hugging Face
+File Name	: 	My Question Generation with LangChain.ipynb
+Location	: 	D:Ediscovery\LLM
+Summary		: 	use own dataset (json format) and use LLM and langchaing to generate the question
+                        It can generate only one question-- cannot do as the prompts said, may be we need to fine tune with efficient amount of data
+
+4. google/flan-t5-xl
+Embedding Model	:	NO need
+Tokenizer Model	:	google/flan-t5-xl
+Language Model	:	google/flan-t5-xl
+Library type	: 	Hugging Face
+File Name	: 	My Question Generation with LangChain.ipynb
+Location	: 	D:Ediscovery\LLM
+Summary		: 	use own dataset (json format) and use LLM and langchaing to generate the question
+
+
+5. google/flan-t5-xxl 
+cannot run, it cause out of space
+SafetensorError: Error while serializing: IoError(Os { code: 28, kind: StorageFull, message: "No space left on device" })
+
+6. lmsys-fastchat-t5-3b-v1.0
+Very good result, can generate multiple quesitons with small fine tune data
+
+
+all tested database and Model"""
+#list of model_id
+    mistralai/Mistral-7B-Instruct-v0.1
+    mistralai/Mistral-7B-v0.1
+    NousResearch/Llama-2-7b-chat-hf
+    google/flan-t5-base
+    HuggingFaceH4/zephyr-7b-beta
+    googlet5-xxl
+    google/flan-t5-xl
+    microsoft/phi-2
+    iarfmoose/t5-base-question-generator
+
+#list of database id
+    mosaicml/instruct-v3
+    gem/viggo
+    own database - jsonl format
+    squad
+    own database - text file format
+    """
